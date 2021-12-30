@@ -16,7 +16,10 @@
    --header-border-color: #ececec;
    --team-bg-color: #f5f4fa;
    --advantage-item-bg: #f5f4fa;
-   
+   --team-icon-color: #AFB1B8;
+   --team-icon-color-hover: #FFFFFF;
+   --team-icon-bg-color-hover: #2196F3;
+
 }
 
 body {
@@ -300,10 +303,7 @@ ul {
 
 .team-list-item {
    width: 270px;
-   /* box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
-   0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2); */
-}
+   }
 
 .team-list-item:not(:last-child) {
    margin-right: 30px;
@@ -312,6 +312,8 @@ ul {
 .team-card-title {
    padding-top: 30px;
    padding-bottom: 30px;
+   padding-left: 32px;
+   padding-right: 32px;
    background-color: #ffffff;
    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -335,6 +337,40 @@ ul {
    font-size: 16px;
    line-height: calc(19 / 16);
 }
+
+.team-card-social-list{
+   display: flex;
+   justify-content: center;
+   margin-top: 16px;
+}
+
+.social-list-item:not(:last-child){
+   margin-right: 10px;
+
+}
+
+.social-list-link{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 44px;
+   height: 44px;
+   border-radius: 50%;
+   background-color: var(--bg-color);
+   color: var(--team-icon-color);
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+   background-color: var(--team-icon-bg-color-hover);
+   color: var(--bg-color);
+}
+
+.team-social-icon{
+   fill: currentColor;
+}
+
+
 
 /* ------------   FOOTER------------- */
 .footer {
