@@ -11,10 +11,11 @@
    --logo2-color: #000000;
    --logo2-color-footer: #ffffff;
    --color-transparency: rgba(255, 255, 255, 0.6);
-   --hero-bg-color: #2f303a;
+   --hero-bg-color: #c4c4c4;
+   --hero-gradient: rgba(47, 48, 58, 0.4);
    --header-border-color: #ececec;
    --team-bg-color: #f5f4fa;
-   --number-of-cards: 3;
+   
 }
 
 body {
@@ -156,6 +157,12 @@ ul {
    padding-top: 200px;
    padding-bottom: 200px;
    background-color: var(--hero-bg-color);
+   background-image: linear-gradient(var(--hero-gradient), var(--hero-gradient)),
+   url('../images/hero.jpg');
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: 1600px;
+   bag
 }
 
 .hero-title {
