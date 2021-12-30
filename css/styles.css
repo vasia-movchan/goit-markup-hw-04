@@ -21,6 +21,8 @@
    --team-icon-bg-color-hover: #2196F3;
    --clients-item: #AFB1B8;
    --clients-item-hover: #2196F3;
+   --footer-bg-color: #2F303A;
+   --join-icon-bg-color: rgba(255, 255, 255, 0.1);
 
 }
 
@@ -431,7 +433,41 @@ margin-right: 30px;
 .footer {
    padding-top: 60px;
    padding-bottom: 60px;
-   background-color: var(--hero-bg-color);
+   background-color: var(--footer-bg-color);
+}
+
+.footer-container{
+display: flex;
+align-items: baseline;
+}
+
+.join{
+   margin-left: 70px;
+}
+
+.join-social-list {
+   display: flex;
+   justify-content: center;
+}
+
+.join-list-link{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 44px;
+   height: 44px;
+   border-radius: 50%;
+   background-color: var(--join-icon-bg-color);
+   color: var(--team-icon-color);
+}
+
+.join-list-link:hover,
+.join-list-link:focus {
+   background-color: var(--team-icon-bg-color-hover);
+   }
+
+.join-social-icon{
+   fill: var(--logo2-color-footer);
 }
 
 .address {
@@ -455,6 +491,15 @@ margin-right: 30px;
 
 .transparency {
    color: var(--color-transparency);
+}
+
+.join-title {
+   margin-bottom: 20px;
+   font-weight: 700;
+   font-size: 14px;
+   line-height: calc(16 / 14);
+   text-transform: uppercase;
+   color: var(--logo2-color-footer);
 }
 
 /* -----------------PORTFOLIO--------------------- */
