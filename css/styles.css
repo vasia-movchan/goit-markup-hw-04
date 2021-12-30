@@ -19,6 +19,8 @@
    --team-icon-color: #AFB1B8;
    --team-icon-color-hover: #FFFFFF;
    --team-icon-bg-color-hover: #2196F3;
+   --clients-item: #AFB1B8;
+   --clients-item-hover: #2196F3;
 
 }
 
@@ -367,6 +369,59 @@ ul {
 }
 
 .team-social-icon{
+   fill: currentColor;
+}
+
+/* --------------CLIENTS-------------- */
+
+.clients {
+   padding-top: 94px;
+   padding-bottom: 94px;
+   background-color: var(--bg-color);
+}
+
+.clients-title {
+   text-align: center;
+   margin-bottom: 50px;
+   font-weight: 700;
+   font-size: 36px;
+   line-height: calc(42 / 36);
+   color: var(--title-text-color);
+}
+
+.clients-list {
+   display: flex;
+}
+
+.clients-list-item {
+   width: 170px;
+   height: 92px;
+   }
+
+.clients-list-item:not(:last-child) {
+margin-right: 30px;
+}
+
+.clients-list-link{
+   display: flex;
+   width: 100%;
+   height: 100%;
+   justify-content: center;
+   align-items: center;
+   border: 1px solid var(--clients-item);
+   border-radius: 4px;
+   color: var(--clients-item);
+}
+
+.clients-list-link:hover,
+.clients-list-link:focus {
+   border: 1px solid var(--clients-item-hover);
+   color: var(--clients-item-hover);
+}
+
+.clients-icon {
+   width: 106px;
+   height: 60px;
    fill: currentColor;
 }
 
